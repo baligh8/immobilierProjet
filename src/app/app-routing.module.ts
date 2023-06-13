@@ -12,9 +12,7 @@ const routes: Routes = [
   {path:'contact', component: ContactComponent}, 
 
   {path:'list-annonces', component: ListAnnoncesComponent}, 
-  {path:'detail', component: DetailAnnonceComponent}, 
-
-
+  {path:'detail-annonce', component: DetailAnnonceComponent}, 
   {path:'singup', component: SingupComponent}, 
   {path:'Add-Annonce', component: AddAnnonceComponent}, 
 

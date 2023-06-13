@@ -6,6 +6,8 @@ const routes: Routes = [
   {path:'', component: AdministrationComponent, children:[
 
     {path:'forum', loadChildren:()=> import('./forum/forum.module').then(m=>m.ForumModule)},
+    {path:'claim', loadChildren:()=> import('./claim/claim.module').then(m=>m.ClaimModule)},
+
     {path:'annonce', loadChildren:()=> import('./Annonce/annonce.module').then(m=>m.AnnonceModule)},
 
 
