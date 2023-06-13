@@ -10,23 +10,19 @@ export class ListClaimComponent implements OnInit {
   claimList:any=[];
   Total!:number;
 
-
   constructor( private claimServices : ClaimService) { }
 
   ngOnInit(): void {
     this.getAllClaim();
   }
   getAllClaim(){
-
     this.claimServices.getALL().subscribe({
       next: (res) => {
         this.claimList = res ; 
       },
       error: (e) => console.error(e), 
     }) 
-
 }
-
 
 deleteClaim(id:number){
   if (confirm('Voulez vous vraiment supprime cette Claim !!?')) {
